@@ -1,0 +1,85 @@
+footer {
+	background: #62272d;
+	clear: both;
+    padding: 10px 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    p {
+        line-height: 1.3;
+    }
+    h1 {
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 700;
+
+        &+p {
+            margin-bottom: 65px;
+            text-align: center;
+            font-size: 1.625rem;
+            color: #555;
+            font-weight: 300;
+        }
+    }
+
+    .social-link {
+        list-style: none;
+        float: right;
+        padding-top: 10px;
+
+        li {
+            display: inline-block;
+            margin-left: 10px;
+
+            a {
+                text-indent: -9999px;
+                overflow: hidden;
+                width: 30px;
+                height: 30px;
+                background: url(http://developer.locaweb.com.br/assets_devnet/images/social-icons.png) no-repeat;
+                display: inline-block;
+
+                &.social-twitter {
+                    background-position: -38px 0;
+                }
+            }
+        }
+    }  
+    
+    .logo-footer {
+        padding: 10px 15px 10px 0;
+        display: inline-block;
+        border-right: 1px solid rgba(255,255,255,0.15);
+        color: #fff;
+        font-weight: 100;
+        font-family: 'Roboto';
+        letter-spacing: 1px;
+        font-size: 12px;
+    }
+    .copyright {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 10px;
+        font-size: 0.6875rem;
+        color: rgba(255,255,255,0.6);
+    }
+}
+
+@media (max-width: 480px) {
+    footer .logo-footer,
+    footer .social-link,
+    footer .copyright {
+        display: block;
+        border: none;
+        text-align: center;
+        float: none
+    }
+    footer .logo-footer {
+        padding-right: 0;
+    }
+    footer .copyright {
+        font-size: 0.8rem
+    }
+}

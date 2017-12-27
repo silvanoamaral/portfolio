@@ -15,6 +15,13 @@ audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:n
 /*----------------------------------------------------------
 Configurações Gerais <<<<<==================================
 ----------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 body{
 	color: #101820; 
 	font-family: "Open Sans", Helvetica, sans-serif, arial; 
@@ -23,10 +30,10 @@ body{
 	line-height: 1.5;
 	text-align: left;  
 }
-.center {
+.container {
 	margin: 0 auto;
 	max-width:1200px; /*largura máxima do layout*/
-	width: 90%; /*ajuste do layout à  tela*/
+	width: 95%; /*ajuste do layout à  tela*/
 }
 /*.clearfix usado para adicionar um espaçoo vazio antes e depois dos elementos
   evitando que os floats se aglomerem.
@@ -67,7 +74,6 @@ h3{
 p{
 	font-size: .8em; /* 12px*/
 	font-weight: 300;
-	letter-spacing: -0.05555555556em; /* -1px à· 18px = -0.05555555556em */
 }
 a, a:link, a:visited{
 	color:#000; 
